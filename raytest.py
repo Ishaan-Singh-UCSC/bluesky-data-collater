@@ -2,6 +2,7 @@ import ray
 from atproto import Client, client_utils
 import time
 from random import randint
+NUM_CPUS = 4
 
 client = Client()
 profile = client.login('ishnicucsc@gmail.com', 'ishaannicholasucsc')
@@ -9,8 +10,7 @@ print('Welcome,', profile.display_name)
 
 DATA_CURSOR = '...'
 
-@ray.remote
-def get_tweets(iterations = 3, batchsize = 5):
+def get_tweets(iterations = 3, batchsize = 50):
     data = client.get_timeline()
 
     # for now, cap iterations TODO: remove this cap
@@ -32,14 +32,30 @@ def get_tweets(iterations = 3, batchsize = 5):
         # Returns both the author and the tweet
         for tweet in data:
             yield (tweet.post.author.handle, tweet.post.record.text)
-        time.sleep(randint(1000,3000)/1000) 
-
     return
 
+@ray.remote
+def map_(data, arraynum):
+    mapped_data = []
+    i = 0
+    for item in data:
+        if (i % 4) == arraynum:
+            mapped_data.append(item)
+    return mapped_data
+
+@ray.remote
+def bert_thing():
+    # TODO: make this function.
+    return
+
+
 def main():
-    data = ray.get(get_tweets.remote())
-    for tweet in data:
-        print(f"{tweet[0]}\n{tweet[1]}\n\n")
+    ray.init(num_cpus=NUM_CPUS)
+    data = get_tweets.remote()
+
+    mapped_data = [map_.remote(data, i) for i in range(NUM_CPUS)]
+    results = 
+    
 
 if __name__ == '__main__':
     main()
