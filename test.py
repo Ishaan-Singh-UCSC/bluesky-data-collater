@@ -1,6 +1,6 @@
 from atproto import Client, client_utils
 
-
+MYLIMIT = 3
 def main():
     client = Client()
     profile = client.login('ishnicucsc@gmail.com', 'ishaannicholasucsc')
@@ -22,12 +22,18 @@ def main():
 
     # 
 
-    data = client.get_timeline()
+    data = client.get_timeline(limit=MYLIMIT)
 
-    feed = data.feed
+    feed1 = data.feed
     next_page = data.cursor
+    data = client.get_timeline(limit=MYLIMIT, cursor=next_page)
+    feed2 = data.feed
     # print(type(feed[1]), type(next_page))
-    for item in feed:
+    for item in feed1:
+        print(f"Author: {item.post.author.handle}")
+        print(item.post.record.text)
+        print("\n\n")
+    for item in feed2:
         print(f"Author: {item.post.author.handle}")
         print(item.post.record.text)
         print("\n\n")

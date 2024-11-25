@@ -20,6 +20,7 @@ def get_tweets(iterations = 3, batchsize = 50):
     '''Uses bluesky api to get tweets in iterations and batch sizes, moving a cursor to get new tweets.'''
     data = client.get_timeline(limit=batchsize)
     feed = data.feed
+    nextpage = data.cursor
     print("to find:", type(data))
     # for now, cap iterations TODO: remove this cap
     iters = 1
@@ -69,7 +70,7 @@ def bert_thing():
 
 
 def main():
-    batchsize = 100
+    batchsize = 30
     ray.init(num_cpus=NUM_CPUS)
     data = get_tweets(batchsize=batchsize)
     data_len = len(data)
