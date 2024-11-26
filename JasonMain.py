@@ -21,7 +21,7 @@ def main():
     # for item in jsonposts:
     #     data_string += " " + item["record"]["text"]
 
-    fp = "Data/searchData.json"
+    fp = "Data/data.json"
     parser = JSONParser()
     parser.parse_json_file_with_path(fp)
 
@@ -29,6 +29,7 @@ def main():
     keywords = newKeywordExtractor.keyword_extraction(parser.large_string)
     keywords2 = newKeywordExtractor.keyword_extraction2(parser.large_string)
     keywords3 = newKeywordExtractor.keyword_extraction3(parser.large_string)
+    keywords4 = newKeywordExtractor.keyword_extraction4(parser.large_string)
     print("keywords 1:")
     for item in keywords:
         print (item)
@@ -39,6 +40,11 @@ def main():
     print("\nkeywords 3:")
     for item in keywords3:
         print(item)
+
+    print("\nkeywords 4:")
+    for item in keywords4:
+        print(item)
+
 
     newSummarizer = TextSummarizer()
     summary = newSummarizer.summarizeString(parser.large_string)
