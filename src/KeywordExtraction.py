@@ -24,3 +24,12 @@ class KeywordExtractor:
         keywords = self.kw_model.extract_keywords(data, keyphrase_ngram_range=(1, 1), 
                                                   top_n=numKeywords, use_mmr=True, diversity=0.7)
         return keywords
+    
+    def keyword_extraction3(self, data, numKeywords=10):
+        '''Data: the text as a single string
+        NumKeywords: keywordss to find (top_n)
+        keyphrase_range: the number of words in the phrases. Minimum and maixmum
+        This version has 1 keyword and more diversity'''
+        keywords = self.kw_model.extract_keywords(data, keyphrase_ngram_range=(1, 2), 
+                                                  top_n=numKeywords, use_mmr=True, diversity=0.5)
+        return keywords
