@@ -18,7 +18,14 @@ class BlueskyTweetExtractor:
         num_iters = floor(batchsize/100)
         first_iter = batchsize % 100
         if first_iter == 0:
-            apiAccessLoop(self.client, num_iters, tweets)
+            data = self.client.get_timeline(limit=first_iter)
+            feed = data.feed
+            nextpage = data.cursor
+            for tweet in feed:
+                # Removes reply tweets
+                if tweet.post.record.reply == None:
+                    tweets.append((tweet.post.author.handle, tweet.post.record.text))
+            apiAccessLoop(self.client, num_iters - 1, tweets)
         else:
             data = self.client.get_timeline(limit=first_iter)
             feed = data.feed
@@ -27,7 +34,7 @@ class BlueskyTweetExtractor:
                 # Removes reply tweets
                 if tweet.post.record.reply == None:
                     tweets.append((tweet.post.author.handle, tweet.post.record.text))
-            apiAccessLoop(self.client, num_iters, tweets)
+            apiAccessLoop(self.client, num_iters, tweets, nextpage)
 
         return tweets
     
@@ -42,7 +49,8 @@ class BlueskyTweetExtractor:
         return tweets
 
 
-def apiAccessLoop(client, num_iters, tweets):
+def apiAccessLoop(client, num_iters, tweets, nextpage):
+    
     for i in range(num_iters):
         data = client.get_timeline(cursor=nextpage,limit=100)
         feed = data.feed
