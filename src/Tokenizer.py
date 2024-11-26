@@ -6,6 +6,7 @@ class BlueSkyTokenizer:
         return
     
     def convertToTokens_User_Tweet_Tuple(self, data):
+        '''Tokenizer for BERT'''
         tokenized_data = []
         tokenizer = AutoTokenizer.from_pretrained("bert-base-cased")
         for item in data:
