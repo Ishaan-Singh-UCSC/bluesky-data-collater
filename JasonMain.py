@@ -2,6 +2,7 @@ import json
 from src.KeywordExtraction import KeywordExtractor
 from src.BERTTextSummarization import TextSummarizer
 from src.JSONParser import JSONParser
+import timeit
 
 def main():
         
@@ -25,11 +26,14 @@ def main():
     parser = JSONParser()
     parser.parse_json_file_with_path(fp)
 
+    start = timeit.default_timer()
     newKeywordExtractor = KeywordExtractor()
     keywords = newKeywordExtractor.keyword_extraction(parser.large_string)
     keywords2 = newKeywordExtractor.keyword_extraction2(parser.large_string)
     keywords3 = newKeywordExtractor.keyword_extraction3(parser.large_string)
     keywords4 = newKeywordExtractor.keyword_extraction4(parser.large_string)
+    end = timeit.default_timer()
+    print(f"time taken: {end - start}")
     print("keywords 1:")
     for item in keywords:
         print (item)
