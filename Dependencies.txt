@@ -1,5 +1,6 @@
-pip install bert-extractive-summarizer
-pip install transformers
 pip install atproto
-pip install spacy
 pip install keybert
+
+# pip install bert-extractive-summarizer
+# pip install transformers
+# pip install spacy
