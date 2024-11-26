@@ -1,6 +1,6 @@
 # https://medium.com/analytics-vidhya/text-summarization-using-bert-gpt2-xlnet-5ee80608e961
 
-from summarizer import Summarizer,TransformerSummarizer
+from summarizer import Summarizer
 
 class TextSummarizer:
     '''Use this Class to summarize text with bert'''
