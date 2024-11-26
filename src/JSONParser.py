@@ -1,5 +1,5 @@
 import json
-
+ 
 class JSONParser:
     def __init__(self):
         self.tweet_tuples = []
