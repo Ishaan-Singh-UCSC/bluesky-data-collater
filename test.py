@@ -30,12 +30,18 @@ def main():
     feed2 = data.feed
     # print(type(feed[1]), type(next_page))
     for item in feed1:
-        print(f"Author: {item.post.author.handle}")
-        print(item.post.record.text)
+        # print(f"Author: {item.post.author.handle}")
+        # print(item.post.record.text)
+        print(item.post)
+        print(item.post.record)
+        print("Is reply: ", item.post.record.reply)
         print("\n\n")
     for item in feed2:
-        print(f"Author: {item.post.author.handle}")
-        print(item.post.record.text)
+        print(item.post)
+        print(item.post.record)
+        print("Is reply: ", item.post.record.reply)
+        # print(f"Author: {item.post.author.handle}")
+        # print(item.post.record.text)
         print("\n\n")
 if __name__ == '__main__':
     main()
