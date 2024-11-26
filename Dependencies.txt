@@ -1,0 +1,3 @@
+pip install bert-extractive-summarizer
+pip install transformers
+pip install atproto
