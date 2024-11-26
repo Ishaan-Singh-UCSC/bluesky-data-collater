@@ -7,7 +7,7 @@ import math
 
 NUM_CPUS = 4
 client = Client()
-profile = client.login('ishnicucsc@gmail.com', 'ishaannicholasucsc')
+profile = client.login('ishnicucsc@gmail.com', '###')
 print('Welcome,', profile.display_name)
 
 

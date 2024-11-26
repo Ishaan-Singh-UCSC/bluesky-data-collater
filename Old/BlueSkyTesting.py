@@ -3,7 +3,7 @@ from atproto import Client, client_utils
 MYLIMIT = 3
 def main():
     client = Client()
-    profile = client.login('ishnicucsc@gmail.com', 'ishaannicholasucsc')
+    profile = client.login('ishnicucsc@gmail.com', '###')
     print('Welcome,', profile.display_name)
 
     # Below is how to post an item to your profile
