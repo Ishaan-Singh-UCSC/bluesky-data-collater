@@ -32,6 +32,7 @@ def main():
     keywords2 = newKeywordExtractor.keyword_extraction2(parser.large_string)
     keywords3 = newKeywordExtractor.keyword_extraction3(parser.large_string)
     keywords4 = newKeywordExtractor.keyword_extraction4(parser.large_string)
+    keywords5 = newKeywordExtractor.keyword_extraction5(parser.large_string)
     end = timeit.default_timer()
     print(f"time taken: {end - start}")
     print("keywords 1:")
@@ -47,6 +48,10 @@ def main():
 
     print("\nkeywords 4:")
     for item in keywords4:
+        print(item)
+
+    print("\nkeywords 5:")
+    for item in keywords5:
         print(item)
 
 
