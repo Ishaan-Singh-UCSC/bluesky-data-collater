@@ -9,7 +9,7 @@ NUMCPUS=2
 def main():
     fp = "Data/data.json"
     parser = JSONParser()
-    parser.initialize_ray_parser(2)
+    parser.initialize_ray_parser(NUMCPUS)
     parser.ray_parser_path(fp)
     
 
@@ -19,11 +19,13 @@ def main():
 
     
     start = timeit.default_timer()
-    keywords1 = keyword_extractor_machine.remote(parser.string_array[0])
-    keywords2 = keyword_extractor_machine.remote(parser.string_array[1])
+    keywords = [keyword_extractor_machine.remote(parser.string_array[i]) for i in range(NUMCPUS)]
+    #keywords1 = keyword_extractor_machine.remote(parser.string_array[0])
+    #keywords2 = keyword_extractor_machine.remote(parser.string_array[1])
 
-    ray.get(keywords1)
-    ray.get(keywords2)
+    #ray.get(keywords1)
+    #ray.get(keywords2)
+    ray.get(keywords)
     end = timeit.default_timer()
 
 
