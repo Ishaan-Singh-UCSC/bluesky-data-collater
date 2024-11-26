@@ -9,7 +9,7 @@ NUMCORES = 1
 def main():
     '''Gets tweets from Bluesky based on a set variable, and finds the keywords to print'''
     print("Getting", NUM_TWEETS, "tweets")
-    creds = open("creds.txt", "r") 
+    creds = open("creds2.txt", "r") 
     line = creds.readline()
     user_pass = line.split(",")
     creds.close()
@@ -19,7 +19,7 @@ def main():
     data = newExtractor.get_tweets(NUM_TWEETS)
     string_data = ''
     for item in data:
-        string_data += item[1]
+        string_data += " " + item[1]
         # print(item,"\n")
     
     newKeywordExtractor = KeywordExtractor()
