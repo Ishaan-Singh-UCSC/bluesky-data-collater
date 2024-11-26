@@ -18,3 +18,7 @@ class TextSummarizer:
             summaries.append((tweet[0],tweet[1],bert_summary))
             
         return summaries
+    
+    def summarizeString(self, data):
+        '''summarizes a string'''
+        return ''.join(self.bert_model(data, min_length=10))
