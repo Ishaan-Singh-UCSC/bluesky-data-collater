@@ -30,6 +30,8 @@ def get_tweets(batchsize):
             tweets.append((tweet.post.author.handle, tweet.post.record.text))
     return tweets
 
+BATCH_SIZES = [1525, 1675, 1825, 1975, 2125, 2275, 2425, 2575, 2725, 2875, 3025, 3175, 3325, 3475, 3625, 3775, 3925, 4075, 4225, 4375, 4525, 4675, 4825, 4975]
+
 def map_normal(data, NUM_CPUS):
     mapped_data=[]
     for i in range(NUM_CPUS):
@@ -51,7 +53,6 @@ def map_remote(data, arraynum, datalen, NUM_CPUS):
 
 
 # BATCH_SIZES = [50, 125, 175, 225, 275, 325, 375, 425, 475, 525, 575, 625, 675, 725, 775, 825, 875, 925, 975, 1025, 1075]
-BATCH_SIZES = [1525, 1675, 1825, 1975, 2125, 2275, 2425, 2575, 2725, 2875, 3025, 3175, 3325, 3475, 3625, 3775, 3925, 4075, 4225, 4375, 4525, 4675, 4825, 4975]
 NUM_CPUS = 16
 NUM_TWEETS = 4975
 data = get_tweets(NUM_TWEETS)
