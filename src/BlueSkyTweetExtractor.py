@@ -28,6 +28,16 @@ class BlueskyTweetExtractor:
             apiAccessLoop(self.client, num_iters, tweets)
 
         return tweets
+    
+    def get_training_tweets(self):
+        tweets = []
+        data = self.client.get_profile(actor='did:plc:l37rmaqsv54sahg54owqfwmy')
+        did = data.did
+        display_name = data.display_name
+        print("Retrieving profile for: ", data.display_name)
+        # TODO
+        print("TODO")
+        return tweets
 
 
 def apiAccessLoop(client, num_iters, tweets):
