@@ -24,8 +24,11 @@ def main():
     
     newKeywordExtractor = KeywordExtractor()
     keywords = newKeywordExtractor.keyword_extraction(string_data)
+    keywords2 = newKeywordExtractor.keyword_extraction2(string_data)
     for item in keywords:
         print (item)
+    for item in keywords2:
+        print(item)
     
     # print("Found tweets: ", len(data))
     # Tokenizer, not used
