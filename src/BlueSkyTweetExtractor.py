@@ -24,7 +24,9 @@ class BlueskyTweetExtractor:
             feed = data.feed
             nextpage = data.cursor
             for tweet in feed:
-                tweets.append((tweet.post.author.handle, tweet.post.record.text))
+                # Removes reply tweets
+                if tweet.post.record.reply != None:
+                    tweets.append((tweet.post.author.handle, tweet.post.record.text))
             apiAccessLoop(self.client, num_iters, tweets)
 
         return tweets
@@ -46,4 +48,6 @@ def apiAccessLoop(client, num_iters, tweets):
         feed = data.feed
         nextpage = data.cursor
         for tweet in feed:
-            tweets.append((tweet.post.author.handle, tweet.post.record.text))
+            # Removes reply tweets
+            if tweet.post.record.reply != None:
+                tweets.append((tweet.post.author.handle, tweet.post.record.text))
