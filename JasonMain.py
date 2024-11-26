@@ -2,7 +2,9 @@ import json
 from src.KeywordExtraction import KeywordExtractor
 from src.BERTTextSummarization import TextSummarizer
 from src.JSONParser import JSONParser
+from bsky_posts_extractor.bsky_get_data import BskyData
 import timeit
+import os
 
 def main():
         
@@ -21,8 +23,12 @@ def main():
 
     # for item in jsonposts:
     #     data_string += " " + item["record"]["text"]
+    obj = BskyData(
+        required_posts=1000,
+        search_phrase="League of Legends"
+    )
 
-    fp = "Data/data.json"
+    fp = os.path.dirname(__file__) + "/Data/data.json"
     parser = JSONParser()
     parser.parse_json_file_with_path(fp)
 
