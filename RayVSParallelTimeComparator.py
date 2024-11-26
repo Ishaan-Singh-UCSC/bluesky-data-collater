@@ -57,8 +57,8 @@ NUM_CPUS = 16
 NUM_TWEETS = 4975
 data = get_tweets(NUM_TWEETS)
 
-
-f = open("timer_test.csv",'w')
+path = "Data/timer_test.csv"
+f = open(path,'w')
 for batch in BATCH_SIZES:
     #remote funciton
     batched_data = data[0:batch]
