@@ -28,7 +28,7 @@ def main():
     #     search_phrase="League of Legends"
     # )
 
-    fp = "Data/data.json"
+    fp = "Data/searchData.json"
     parser = JSONParser()
     parser.parse_json_file_with_path(fp)
     with open(fp, 'r') as file:
@@ -66,9 +66,9 @@ def main():
     #     print(item)
 
 
-    newSummarizer = TextSummarizer()
-    summary = newSummarizer.summarizeString(parser.large_string)
-    print("Summary:", summary)
+    # newSummarizer = TextSummarizer()
+    # summary = newSummarizer.summarizeString(parser.large_string)
+    # print("Summary:", summary)
     
     
 
