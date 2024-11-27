@@ -1,13 +1,18 @@
-import json
+import json, os
 from src.KeywordExtraction import KeywordExtractor
 from src.JSONParser import JSONParser
+from bsky_posts_extractor.bsky_get_data import BskyData
 import ray
 import timeit
 
 NUMCPUS=2
 
 def main():
-    fp = "Data/data.json"
+    obj = BskyData(
+        required_posts=1000,
+        search_phrase="League of Legends"
+    )
+    fp = os.path.dirname(__file__) + "/Data/data.json"
     parser = JSONParser()
     parser.initialize_ray_parser(2)
     parser.ray_parser_path(fp)
