@@ -2,7 +2,7 @@ import json
 from src.KeywordExtraction import KeywordExtractor
 from src.BERTTextSummarization import TextSummarizer
 from src.JSONParser import JSONParser
-from bsky_posts_extractor.bsky_get_data import BskyData
+#from bsky_posts_extractor.bsky_get_data import BskyData
 import timeit
 import os
 
@@ -23,22 +23,27 @@ def main():
 
     # for item in jsonposts:
     #     data_string += " " + item["record"]["text"]
-    obj = BskyData(
-        required_posts=1000,
-        search_phrase="League of Legends"
-    )
+    # obj = BskyData(
+    #     required_posts=1000,
+    #     search_phrase="League of Legends"
+    # )
 
-    fp = os.path.dirname(__file__) + "/Data/data.json"
+    fp = "Data/data.json"
     parser = JSONParser()
     parser.parse_json_file_with_path(fp)
-
+    with open(fp, 'r') as file:
+            json_data = json.load(file)
+    i = 0
+    for item in json_data["posts"]:
+        i += 1
+    print("NUM POSTS:", i)
     start = timeit.default_timer()
     newKeywordExtractor = KeywordExtractor()
     keywords = newKeywordExtractor.keyword_extraction(parser.large_string)
     keywords2 = newKeywordExtractor.keyword_extraction2(parser.large_string)
     keywords3 = newKeywordExtractor.keyword_extraction3(parser.large_string)
     keywords4 = newKeywordExtractor.keyword_extraction4(parser.large_string)
-    keywords5 = newKeywordExtractor.keyword_extraction5(parser.large_string)
+   
     end = timeit.default_timer()
     print(f"time taken: {end - start}")
     print("keywords 1:")
@@ -56,9 +61,9 @@ def main():
     for item in keywords4:
         print(item)
 
-    print("\nkeywords 5:")
-    for item in keywords5:
-        print(item)
+    # print("\nkeywords 5:")
+    # for item in keywords5:
+    #     print(item)
 
 
     newSummarizer = TextSummarizer()

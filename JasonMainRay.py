@@ -4,7 +4,7 @@ from src.JSONParser import JSONParser
 import ray
 import timeit
 
-NUMCPUS=2
+NUMCPUS=8
 
 def main():
     fp = "Data/data.json"
