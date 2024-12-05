@@ -1,6 +1,7 @@
 import json
  
 class JSONParser:
+
     def __init__(self):
         self.tweet_tuples = []
         self.large_string = ''
@@ -8,9 +9,12 @@ class JSONParser:
         self.NUMCPUS = 1
 
     def parse_json_file_with_path(self, path):
-        '''Parses JSON files, adding them to a tweet tuple as normal,
+        '''
+        Parses JSON files, adding them to a tweet tuple as normal,
         also adds them to a string
-        Returns 1 on failure, 0 on success'''
+        Returns 1 on failure, 0 on success
+        '''
+
         with open(path, 'r') as file:
             json_data = json.load(file)
 
@@ -25,9 +29,11 @@ class JSONParser:
 
 
     def parse_json_already_loaded(self, json):
-        '''Parses a JSON, adding them to a tweet tuple as normal,
+        '''
+        Parses a JSON, adding them to a tweet tuple as normal,
         also adds them to a string
-        Returns 1 on failure, 0 on success'''
+        Returns 1 on failure, 0 on success
+        '''
 
         jsonposts = json["posts"]
         if jsonposts == None:
@@ -46,9 +52,12 @@ class JSONParser:
             self.string_array.append("")
 
     def ray_parser_path(self, path):
-        '''Parses a JSON, adding them to a tweet tuple as normal,
+        '''
+        Parses a JSON, adding them to a tweet tuple as normal,
         also adds them to a string
-        Returns 1 on failure, 0 on success'''
+        Returns 1 on failure, 0 on success
+        '''
+        
         i = 0
         with open(path, 'r') as file:
             json_data = json.load(file)

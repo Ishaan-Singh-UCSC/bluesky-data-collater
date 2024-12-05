@@ -4,3 +4,5 @@ pip install keybert
 # pip install bert-extractive-summarizer
 # pip install transformers
 # pip install spacy
+# pip install starlette
+# pip install ray
