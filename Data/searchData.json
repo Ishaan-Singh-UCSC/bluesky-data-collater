@@ -1,0 +1,548 @@
+{
+    "posts": [
+        {
+            "uri": "at://did:plc:uzhm5pauaelvodbpc6vjralc/app.bsky.feed.post/3lbtae2kwfs2j",
+            "cid": "bafyreihafghggpjncm2cgzilnmckrg4s6z4tvlnoj4r5pgel33nltiep4y",
+            "author": {
+                "did": "did:plc:uzhm5pauaelvodbpc6vjralc",
+                "handle": "ks19green.bsky.social",
+                "displayName": "Kenneth Stoddard",
+                "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:uzhm5pauaelvodbpc6vjralc/bafkreihw6xzm54arn6x6sl7xgtxqpelmk7ygfgqk76kukvv6xwnlc427q4@jpeg",
+                "associated": {
+                    "chat": {
+                        "allowIncoming": "following"
+                    }
+                },
+                "viewer": {
+                    "muted": false,
+                    "blockedBy": false
+                },
+                "labels": [],
+                "createdAt": "2023-11-24T22:28:03.322Z"
+            },
+            "record": {
+                "$type": "app.bsky.feed.post",
+                "createdAt": "2024-11-26T04:49:45.755Z",
+                "embed": {
+                    "$type": "app.bsky.embed.external",
+                    "external": {
+                        "description": "ALT: a cartoon of a woman and a monster with a netflix logo in the corner",
+                        "thumb": {
+                            "$type": "blob",
+                            "ref": {
+                                "$link": "bafkreiei3s4uhqoxs7uqrem3jiwgs3sowa4su3phs3dqwa6dhul72pv5we"
+                            },
+                            "mimeType": "image/jpeg",
+                            "size": 190241
+                        },
+                        "title": "a cartoon of a woman and a monster with a netflix logo in the corner",
+                        "uri": "https://media.tenor.com/ipuGPcc3iHUAAAAC/i-love-you-vi.gif?hh=281&ww=498"
+                    }
+                },
+                "langs": [
+                    "en"
+                ],
+                "text": "Even though it not a masterpiece levels of the first season, Arcane: League of Legends is still awesome in it final season thanks to the animation, visuals, characters, voice acting, action scenes, world building, and the emotional stakes. It a must watch season that ends on a bittersweet note. 9/10"
+            },
+            "embed": {
+                "$type": "app.bsky.embed.external#view",
+                "external": {
+                    "uri": "https://media.tenor.com/ipuGPcc3iHUAAAAC/i-love-you-vi.gif?hh=281&ww=498",
+                    "title": "a cartoon of a woman and a monster with a netflix logo in the corner",
+                    "description": "ALT: a cartoon of a woman and a monster with a netflix logo in the corner",
+                    "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:uzhm5pauaelvodbpc6vjralc/bafkreiei3s4uhqoxs7uqrem3jiwgs3sowa4su3phs3dqwa6dhul72pv5we@jpeg"
+                }
+            },
+            "replyCount": 0,
+            "repostCount": 0,
+            "likeCount": 0,
+            "quoteCount": 0,
+            "indexedAt": "2024-11-26T04:49:47.848Z",
+            "viewer": {
+                "threadMuted": false,
+                "embeddingDisabled": false
+            },
+            "labels": []
+        },
+        {
+            "uri": "at://did:plc:lcc5iqcwnef2ujjbgnyn3d34/app.bsky.feed.post/3lbtac5cf422k",
+            "cid": "bafyreih73ulp2upleg6wuhlx2rh7jbk5fodfsi65a5sjvqeha5jsujhcce",
+            "author": {
+                "did": "did:plc:lcc5iqcwnef2ujjbgnyn3d34",
+                "handle": "1yottabyte.bsky.social",
+                "displayName": "Bee",
+                "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:lcc5iqcwnef2ujjbgnyn3d34/bafkreidmb2wmjwewy5khu6zpv3l4dtrjqeurwwocrceuadxilc4zbksu3u@jpeg",
+                "viewer": {
+                    "muted": false,
+                    "blockedBy": false
+                },
+                "labels": [
+                    {
+                        "src": "did:plc:lcc5iqcwnef2ujjbgnyn3d34",
+                        "uri": "at://did:plc:lcc5iqcwnef2ujjbgnyn3d34/app.bsky.actor.profile/self",
+                        "cid": "bafyreihcdm5xtxjlsuf5nr45odsvxrjnmkseci5qyaqvsad2dyc7drsnsa",
+                        "val": "!no-unauthenticated",
+                        "cts": "2024-11-26T02:33:26.261Z"
+                    }
+                ],
+                "createdAt": "2024-11-26T02:33:27.245Z"
+            },
+            "record": {
+                "$type": "app.bsky.feed.post",
+                "createdAt": "2024-11-26T04:48:41.512Z",
+                "langs": [
+                    "en"
+                ],
+                "reply": {
+                    "parent": {
+                        "cid": "bafyreihvktoyrhgwhgyr6xqa3alat2dxmng2cypvfnk4wepvvgblxx4koy",
+                        "uri": "at://did:plc:glxl7qkw2ziscyu24rog7u4j/app.bsky.feed.post/3lbsb7ru3t22g"
+                    },
+                    "root": {
+                        "cid": "bafyreihvktoyrhgwhgyr6xqa3alat2dxmng2cypvfnk4wepvvgblxx4koy",
+                        "uri": "at://did:plc:glxl7qkw2ziscyu24rog7u4j/app.bsky.feed.post/3lbsb7ru3t22g"
+                    }
+                },
+                "text": "Yes. Coming from a person who doesn't even like playing League of Legends"
+            },
+            "replyCount": 0,
+            "repostCount": 0,
+            "likeCount": 0,
+            "quoteCount": 0,
+            "indexedAt": "2024-11-26T04:48:42.160Z",
+            "viewer": {
+                "threadMuted": false,
+                "embeddingDisabled": false
+            },
+            "labels": []
+        },
+        {
+            "uri": "at://did:plc:hhzvfwib5f6zjgbsyjvtzvwo/app.bsky.feed.post/3lbta5sctss25",
+            "cid": "bafyreib7kcorhxtnzdgvwnlzsbwgattyefluznhn6ubpnlbagpbgehfigi",
+            "author": {
+                "did": "did:plc:hhzvfwib5f6zjgbsyjvtzvwo",
+                "handle": "shuitsukislove.bsky.social",
+                "displayName": "Void :3",
+                "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:hhzvfwib5f6zjgbsyjvtzvwo/bafkreifxzc6itt6f47nbogdad3cjuwbiki42mlqrsszk5d4fbfyiisfsw4@jpeg",
+                "viewer": {
+                    "muted": false,
+                    "blockedBy": false
+                },
+                "labels": [],
+                "createdAt": "2024-10-16T22:26:58.007Z"
+            },
+            "record": {
+                "$type": "app.bsky.feed.post",
+                "createdAt": "2024-11-26T04:46:15.773Z",
+                "embed": {
+                    "$type": "app.bsky.embed.images",
+                    "images": [
+                        {
+                            "alt": "League of Legends",
+                            "aspectRatio": {
+                                "height": 1091,
+                                "width": 2000
+                            },
+                            "image": {
+                                "$type": "blob",
+                                "ref": {
+                                    "$link": "bafkreieryickjd5whpr6r44dxbzcu376o5dua7t6ql7rftcvbbrpeob63a"
+                                },
+                                "mimeType": "image/jpeg",
+                                "size": 601597
+                            }
+                        }
+                    ]
+                },
+                "langs": [
+                    "en"
+                ],
+                "text": "I have condemned myself to hell"
+            },
+            "embed": {
+                "$type": "app.bsky.embed.images#view",
+                "images": [
+                    {
+                        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:hhzvfwib5f6zjgbsyjvtzvwo/bafkreieryickjd5whpr6r44dxbzcu376o5dua7t6ql7rftcvbbrpeob63a@jpeg",
+                        "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:hhzvfwib5f6zjgbsyjvtzvwo/bafkreieryickjd5whpr6r44dxbzcu376o5dua7t6ql7rftcvbbrpeob63a@jpeg",
+                        "alt": "League of Legends",
+                        "aspectRatio": {
+                            "height": 1091,
+                            "width": 2000
+                        }
+                    }
+                ]
+            },
+            "replyCount": 0,
+            "repostCount": 0,
+            "likeCount": 0,
+            "quoteCount": 0,
+            "indexedAt": "2024-11-26T04:46:17.958Z",
+            "viewer": {
+                "threadMuted": false,
+                "embeddingDisabled": false
+            },
+            "labels": []
+        },
+        {
+            "uri": "at://did:plc:5qd6nai5gkeqkichkt5tmxa6/app.bsky.feed.post/3lbta4r27hc2p",
+            "cid": "bafyreic5ictwqu6n7gsnrkgvo7tptrio6c36lzch4tyt5xttjuefx7fsju",
+            "author": {
+                "did": "did:plc:5qd6nai5gkeqkichkt5tmxa6",
+                "handle": "bormeleon.bsky.social",
+                "displayName": "Bormeleon",
+                "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:5qd6nai5gkeqkichkt5tmxa6/bafkreigks3acppc7d5lhhql55rmuzd4ysk37ed6zhtzxj5bqaevvcwxd6a@jpeg",
+                "viewer": {
+                    "muted": false,
+                    "blockedBy": false
+                },
+                "labels": [],
+                "createdAt": "2024-10-21T21:46:04.407Z"
+            },
+            "record": {
+                "$type": "app.bsky.feed.post",
+                "createdAt": "2024-11-26T04:45:40.889Z",
+                "langs": [
+                    "en"
+                ],
+                "reply": {
+                    "parent": {
+                        "cid": "bafyreib4takskqmrkdftl2fgsfmjceepvfw32lb6vga2cobppp7d322j7m",
+                        "uri": "at://did:plc:ufoozx2sljchtsqrfdovqiei/app.bsky.feed.post/3lbt5gh66d22j"
+                    },
+                    "root": {
+                        "cid": "bafyreib4takskqmrkdftl2fgsfmjceepvfw32lb6vga2cobppp7d322j7m",
+                        "uri": "at://did:plc:ufoozx2sljchtsqrfdovqiei/app.bsky.feed.post/3lbt5gh66d22j"
+                    }
+                },
+                "text": "It's fun league of legends fortnite overwatch war craft 3 evercore heroes"
+            },
+            "replyCount": 0,
+            "repostCount": 0,
+            "likeCount": 0,
+            "quoteCount": 0,
+            "indexedAt": "2024-11-26T04:45:41.451Z",
+            "viewer": {
+                "threadMuted": false,
+                "embeddingDisabled": false
+            },
+            "labels": []
+        },
+        {
+            "uri": "at://did:plc:benx7qjwx6cft5k5yu7nlcls/app.bsky.feed.post/3lbt7yw7o4c2p",
+            "cid": "bafyreidbqcxd3k3u226tv4mmo7mriaanjig3qkjluzdv5pd73nm3576bhi",
+            "author": {
+                "did": "did:plc:benx7qjwx6cft5k5yu7nlcls",
+                "handle": "blipblob.bsky.social",
+                "displayName": "Blip",
+                "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:benx7qjwx6cft5k5yu7nlcls/bafkreihk4do2sfeqboyj4i6speyveo7guea6rghrl3lgctff6yf3kyb5t4@jpeg",
+                "associated": {
+                    "chat": {
+                        "allowIncoming": "following"
+                    }
+                },
+                "viewer": {
+                    "muted": false,
+                    "blockedBy": false
+                },
+                "labels": [],
+                "createdAt": "2024-10-21T02:11:47.812Z"
+            },
+            "record": {
+                "$type": "app.bsky.feed.post",
+                "createdAt": "2024-11-26T04:43:32.094Z",
+                "langs": [
+                    "en"
+                ],
+                "text": "I\u2019ve lost many friends to the disease known as league of legends. They\u2019re entrapped by the allure of charismatic characters and tall tales of esports glory. Yet the result is all the same: late nights at the desk, grinding away in jungle for hours, Sisyphus pushing a boulder of his own volition"
+            },
+            "replyCount": 0,
+            "repostCount": 0,
+            "likeCount": 5,
+            "quoteCount": 0,
+            "indexedAt": "2024-11-26T04:43:32.354Z",
+            "viewer": {
+                "threadMuted": false,
+                "embeddingDisabled": false
+            },
+            "labels": []
+        },
+        {
+            "uri": "at://did:plc:serfagzroi6rrppt6nndvhph/app.bsky.feed.post/3lbt7yextvs2h",
+            "cid": "bafyreifdhv5xzees7lysnv4shlvo2fw346albktghhsk4cqenn675vewwu",
+            "author": {
+                "did": "did:plc:serfagzroi6rrppt6nndvhph",
+                "handle": "essemkato.bsky.social",
+                "displayName": "smk \ud83e\uddbf",
+                "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:serfagzroi6rrppt6nndvhph/bafkreifj5z3m76dqcrnhig5cn44l4xx3iuwat37v3wpzhc3bcgk2wusec4@jpeg",
+                "viewer": {
+                    "muted": false,
+                    "blockedBy": false
+                },
+                "labels": [],
+                "createdAt": "2023-10-09T17:53:56.527Z"
+            },
+            "record": {
+                "$type": "app.bsky.feed.post",
+                "createdAt": "2024-11-26T04:43:14.010Z",
+                "langs": [
+                    "en"
+                ],
+                "reply": {
+                    "parent": {
+                        "cid": "bafyreiefd4t2nvknt2vwiefz45q7ukgtbwkhgh7sd26caxx23vlupiyq24",
+                        "uri": "at://did:plc:fwyavdyfx3cxnfd5iqvfrxgv/app.bsky.feed.post/3lbrbhhblpc2x"
+                    },
+                    "root": {
+                        "cid": "bafyreidrqpamputdqscpoktkkk75cw5ywn3qtu2inypzdt2ll5l5mwflde",
+                        "uri": "at://did:plc:7jfsjltalli6kwt6mmxk2qte/app.bsky.feed.post/3lbqsbqo2vc2p"
+                    }
+                },
+                "text": "literally anything that's not a league of legends commercial"
+            },
+            "replyCount": 1,
+            "repostCount": 0,
+            "likeCount": 0,
+            "quoteCount": 0,
+            "indexedAt": "2024-11-26T04:43:14.457Z",
+            "viewer": {
+                "threadMuted": false,
+                "embeddingDisabled": false
+            },
+            "labels": []
+        },
+        {
+            "uri": "at://did:plc:nakz4bnxcvb43si6s4kdkv5x/app.bsky.feed.post/3lbt7y6w7mk2g",
+            "cid": "bafyreihickmo5i6ya5jsvwhp32chxuzvv5wu42gvgyhzfdzqhub2hwmyuq",
+            "author": {
+                "did": "did:plc:nakz4bnxcvb43si6s4kdkv5x",
+                "handle": "brunnu.bsky.social",
+                "displayName": "Brunnu",
+                "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:nakz4bnxcvb43si6s4kdkv5x/bafkreigt6hpyvpjaygsdlrjx6gco7mw4h2opasxpctv3mysnjp267ftbja@jpeg",
+                "associated": {
+                    "chat": {
+                        "allowIncoming": "following"
+                    }
+                },
+                "viewer": {
+                    "muted": false,
+                    "blockedBy": false
+                },
+                "labels": [],
+                "createdAt": "2024-08-30T21:40:51.537Z"
+            },
+            "record": {
+                "$type": "app.bsky.feed.post",
+                "createdAt": "2024-11-26T04:43:07.663Z",
+                "embed": {
+                    "$type": "app.bsky.embed.images",
+                    "images": [
+                        {
+                            "alt": "",
+                            "aspectRatio": {
+                                "height": 404,
+                                "width": 735
+                            },
+                            "image": {
+                                "$type": "blob",
+                                "ref": {
+                                    "$link": "bafkreic2thyu3eszlf5zjmhzjuh4qknax5mehsbubht2f436zm4vzqe6hy"
+                                },
+                                "mimeType": "image/jpeg",
+                                "size": 209761
+                            }
+                        }
+                    ]
+                },
+                "langs": [
+                    "pt"
+                ],
+                "reply": {
+                    "parent": {
+                        "cid": "bafyreiffgxarabtbukflo26o4qwxu7fqxfzetm6mzrc5t5v4pu6ki6htsq",
+                        "uri": "at://did:plc:nakz4bnxcvb43si6s4kdkv5x/app.bsky.feed.post/3lbqg4fu5m22o"
+                    },
+                    "root": {
+                        "cid": "bafyreiffgxarabtbukflo26o4qwxu7fqxfzetm6mzrc5t5v4pu6ki6htsq",
+                        "uri": "at://did:plc:nakz4bnxcvb43si6s4kdkv5x/app.bsky.feed.post/3lbqg4fu5m22o"
+                    }
+                },
+                "text": "Gwen (League Of Legends)"
+            },
+            "embed": {
+                "$type": "app.bsky.embed.images#view",
+                "images": [
+                    {
+                        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:nakz4bnxcvb43si6s4kdkv5x/bafkreic2thyu3eszlf5zjmhzjuh4qknax5mehsbubht2f436zm4vzqe6hy@jpeg",
+                        "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:nakz4bnxcvb43si6s4kdkv5x/bafkreic2thyu3eszlf5zjmhzjuh4qknax5mehsbubht2f436zm4vzqe6hy@jpeg",
+                        "alt": "",
+                        "aspectRatio": {
+                            "height": 404,
+                            "width": 735
+                        }
+                    }
+                ]
+            },
+            "replyCount": 0,
+            "repostCount": 0,
+            "likeCount": 0,
+            "quoteCount": 0,
+            "indexedAt": "2024-11-26T04:43:06.358Z",
+            "viewer": {
+                "threadMuted": false,
+                "embeddingDisabled": false
+            },
+            "labels": []
+        },
+        {
+            "uri": "at://did:plc:s4uzm3jecxyczihggkp3dyfb/app.bsky.feed.post/3lbt7tw46ws27",
+            "cid": "bafyreifyyyns3ksyshrme2sd7qnar4c6nxskvhebazlhn57adfcs5cownq",
+            "author": {
+                "did": "did:plc:s4uzm3jecxyczihggkp3dyfb",
+                "handle": "mamavitelli.bsky.social",
+                "displayName": "Jesse Vitelli ",
+                "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:s4uzm3jecxyczihggkp3dyfb/bafkreicx2rpuhlrsnmjbp2au4dveueaq2nb4xu3xljwejmpigoff3vrxr4@jpeg",
+                "associated": {
+                    "chat": {
+                        "allowIncoming": "following"
+                    }
+                },
+                "viewer": {
+                    "muted": false,
+                    "blockedBy": false
+                },
+                "labels": [],
+                "createdAt": "2023-05-09T15:03:19.979Z"
+            },
+            "record": {
+                "$type": "app.bsky.feed.post",
+                "createdAt": "2024-11-26T04:40:44.207Z",
+                "embed": {
+                    "$type": "app.bsky.embed.images",
+                    "images": [
+                        {
+                            "alt": "",
+                            "aspectRatio": {
+                                "height": 873,
+                                "width": 892
+                            },
+                            "image": {
+                                "$type": "blob",
+                                "ref": {
+                                    "$link": "bafkreidfdcxw36pqmwagdhl5zbwop5hiimbcptdbgznvs6tgpmlco6aa5m"
+                                },
+                                "mimeType": "image/jpeg",
+                                "size": 351320
+                            }
+                        }
+                    ]
+                },
+                "langs": [
+                    "en"
+                ],
+                "text": "My League of Legends experience has been my friends asking \"what role do you want to play\" and me responding with \"i dont care I'm the fish man om nom nom nom\""
+            },
+            "embed": {
+                "$type": "app.bsky.embed.images#view",
+                "images": [
+                    {
+                        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:s4uzm3jecxyczihggkp3dyfb/bafkreidfdcxw36pqmwagdhl5zbwop5hiimbcptdbgznvs6tgpmlco6aa5m@jpeg",
+                        "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:s4uzm3jecxyczihggkp3dyfb/bafkreidfdcxw36pqmwagdhl5zbwop5hiimbcptdbgznvs6tgpmlco6aa5m@jpeg",
+                        "alt": "",
+                        "aspectRatio": {
+                            "height": 873,
+                            "width": 892
+                        }
+                    }
+                ]
+            },
+            "replyCount": 2,
+            "repostCount": 0,
+            "likeCount": 5,
+            "quoteCount": 0,
+            "indexedAt": "2024-11-26T04:40:46.355Z",
+            "viewer": {
+                "threadMuted": false,
+                "embeddingDisabled": false
+            },
+            "labels": []
+        },
+        {
+            "uri": "at://did:plc:kgx6h25uiw7ipgrbfopq6mx3/app.bsky.feed.post/3lbt7qb3hv226",
+            "cid": "bafyreifaugw5652rj5w6nyltpcd65khz54lwd6remwfqf6ezllbg5wq3ay",
+            "author": {
+                "did": "did:plc:kgx6h25uiw7ipgrbfopq6mx3",
+                "handle": "isotridecanol.bsky.social",
+                "displayName": "ellie?",
+                "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:kgx6h25uiw7ipgrbfopq6mx3/bafkreiclkxdqbofi45x7dslclxi3jomaafdfi43h27sng7xdrk7w4aycgm@jpeg",
+                "viewer": {
+                    "muted": false,
+                    "blockedBy": false
+                },
+                "labels": [
+                    {
+                        "src": "did:plc:kgx6h25uiw7ipgrbfopq6mx3",
+                        "uri": "at://did:plc:kgx6h25uiw7ipgrbfopq6mx3/app.bsky.actor.profile/self",
+                        "cid": "bafyreig6rydbwgkpmi7mrpc4ofrw5fticmcwyrkmmx2gdaqilgvzamcz7a",
+                        "val": "!no-unauthenticated",
+                        "cts": "1970-01-01T00:00:00.000Z"
+                    }
+                ],
+                "createdAt": "2023-08-09T18:13:25.141Z"
+            },
+            "record": {
+                "$type": "app.bsky.feed.post",
+                "createdAt": "2024-11-26T04:38:41.501Z",
+                "langs": [
+                    "en"
+                ],
+                "text": "i cant bring myself to like hate this show its compelling enough but man it sure was a show by the league of legends people meant to cater to twitter lesbians"
+            },
+            "replyCount": 0,
+            "repostCount": 0,
+            "likeCount": 3,
+            "quoteCount": 0,
+            "indexedAt": "2024-11-26T04:38:41.662Z",
+            "viewer": {
+                "threadMuted": false,
+                "embeddingDisabled": false
+            },
+            "labels": []
+        },
+        {
+            "uri": "at://did:plc:terrgoxjnbvwrbpoa5ytimkz/app.bsky.feed.post/3lbt7ouopzc2a",
+            "cid": "bafyreicqhp7yfotegfjqr23nnb2h3xjaoimztz5tu3hlcqiqwyr6fgs45e",
+            "author": {
+                "did": "did:plc:terrgoxjnbvwrbpoa5ytimkz",
+                "handle": "thenemosystem.bsky.social",
+                "displayName": "Tony Pizza",
+                "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:terrgoxjnbvwrbpoa5ytimkz/bafkreibau2vabgj4ghzskq2kftqbrfjnq323uynhlq5l274slsi6av3doy@jpeg",
+                "viewer": {
+                    "muted": false,
+                    "blockedBy": false
+                },
+                "labels": [],
+                "createdAt": "2024-11-23T21:23:50.444Z"
+            },
+            "record": {
+                "$type": "app.bsky.feed.post",
+                "createdAt": "2024-11-26T04:37:54.946Z",
+                "langs": [
+                    "en"
+                ],
+                "text": "I don't care if you aren't into animation. I don't care if League of Legends isn't your thing.\n\nIf you're a system with fictives, and ESPECIALLY if any of those fictives are \"villains\" in their source:\n\nWatch Arcane. S2E7 is the important one."
+            },
+            "replyCount": 1,
+            "repostCount": 0,
+            "likeCount": 0,
+            "quoteCount": 0,
+            "indexedAt": "2024-11-26T04:37:55.660Z",
+            "viewer": {
+                "threadMuted": false,
+                "embeddingDisabled": false
+            },
+            "labels": []
+        }
+    ],
+    "cursor": "20"
+}

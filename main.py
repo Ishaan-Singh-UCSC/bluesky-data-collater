@@ -17,18 +17,25 @@ def main():
     newExtractor = BlueskyTweetExtractor(user_pass[0], user_pass[1])
 
     data = newExtractor.get_tweets(NUM_TWEETS)
-    string_data = ''
+    data2 = {"posts": []}
     for item in data:
-        string_data += " " + item[1]
-        # print(item,"\n")
+        data2["posts"].append({"text": item[1]})
+
+    import json
+    with open('data123123.json', 'w') as f:
+        json.dump(data2, f)
+    # string_data = ''
+    # for item in data:
+    #     string_data += " " + item[1]
+    #     # print(item,"\n")
     
-    newKeywordExtractor = KeywordExtractor()
-    keywords = newKeywordExtractor.keyword_extraction(string_data)
-    keywords2 = newKeywordExtractor.keyword_extraction2(string_data)
-    for item in keywords:
-        print (item)
-    for item in keywords2:
-        print(item)
+    # newKeywordExtractor = KeywordExtractor()
+    # keywords = newKeywordExtractor.keyword_extraction(string_data)
+    # keywords2 = newKeywordExtractor.keyword_extraction2(string_data)
+    # for item in keywords:
+    #     print (item)
+    # for item in keywords2:
+    #     print(item)
     
     # print("Found tweets: ", len(data))
     # Tokenizer, not used

@@ -51,3 +51,24 @@ class KeywordExtractor:
         keywords = self.kw_model.extract_keywords(data, keyphrase_ngram_range=(1, 1), 
                                                   top_n=numKeywords, use_mmr=True, diversity=0.5)
         return keywords
+    
+    def keyword_extraction_all(self, data, numKeywords=10):
+        '''Finds keywords at multiple different levels of diversity'''
+        kws = [[],[],[],[]]
+        kws[0] = self.kw_model.extract_keywords(data, keyphrase_ngram_range=(1, 1), 
+                                                  top_n=numKeywords, use_mmr=True, diversity=0.5)
+        kws[1] = self.kw_model.extract_keywords(data, keyphrase_ngram_range=(1, 1), 
+                                                  top_n=numKeywords, use_mmr=True, diversity=0.6)
+        kws[2] = self.kw_model.extract_keywords(data, keyphrase_ngram_range=(1, 1), 
+                                                  top_n=numKeywords, use_mmr=True, diversity=0.4)
+        kws[3] = self.kw_model.extract_keywords(data, keyphrase_ngram_range=(1, 1), 
+                                                  top_n=numKeywords, use_mmr=True, diversity=0.3)
+        
+        keywords = []
+        for i in range(10):
+            keywords.append(kws[0][i])
+            keywords.append(kws[1][i])
+            keywords.append(kws[2][i])
+            keywords.append(kws[3][i])
+        
+        return keywords

@@ -28,7 +28,7 @@ def main():
     #     search_phrase="League of Legends"
     # )
 
-    fp = "Data/searchData.json"
+    fp = "Data/data.json"
     parser = JSONParser()
     parser.parse_json_file_with_path(fp)
     with open(fp, 'r') as file:
@@ -37,29 +37,41 @@ def main():
     for item in json_data["posts"]:
         i += 1
     print("NUM POSTS:", i)
+
     start = timeit.default_timer()
-    newKeywordExtractor = KeywordExtractor()
-    keywords = newKeywordExtractor.keyword_extraction(parser.large_string)
-    keywords2 = newKeywordExtractor.keyword_extraction2(parser.large_string)
-    keywords3 = newKeywordExtractor.keyword_extraction3(parser.large_string)
-    keywords4 = newKeywordExtractor.keyword_extraction4(parser.large_string)
-   
+    newKWExtractor = KeywordExtractor()
+    kws = newKWExtractor.keyword_extraction_all(parser.large_string)
     end = timeit.default_timer()
+
+    kws_by_cos = sorted(kws, key=lambda tup: tup[1])
     print(f"time taken: {end - start}")
-    print("keywords 1:")
-    for item in keywords:
-        print (item)
-    print("\nkeywords 2:")
-    for item in keywords2:
-        print(item)
+    for item in kws_by_cos:
+         print(item)
 
-    print("\nkeywords 3:")
-    for item in keywords3:
-        print(item)
+    # start = timeit.default_timer()
+    # newKeywordExtractor = KeywordExtractor()
+    # keywords = newKeywordExtractor.keyword_extraction(parser.large_string)
+    # keywords2 = newKeywordExtractor.keyword_extraction2(parser.large_string)
+    # keywords3 = newKeywordExtractor.keyword_extraction3(parser.large_string)
+    # keywords4 = newKeywordExtractor.keyword_extraction4(parser.large_string)
+    # keywords5 = newKeywordExtractor.keyword_extraction5(parser.large_string)
+   
+    # end = timeit.default_timer()
+    # print(f"time taken: {end - start}")
+    # print("keywords 1:")
+    # for item in keywords:
+    #     print (item)
+    # print("\nkeywords 2:")
+    # for item in keywords2:
+    #     print(item)
 
-    print("\nkeywords 4:")
-    for item in keywords4:
-        print(item)
+    # print("\nkeywords 3:")
+    # for item in keywords3:
+    #     print(item)
+
+    # print("\nkeywords 4:")
+    # for item in keywords4:
+    #     print(item)
 
     # print("\nkeywords 5:")
     # for item in keywords5:
