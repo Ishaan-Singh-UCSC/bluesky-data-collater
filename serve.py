@@ -26,7 +26,7 @@ class SentimentAnalysisDeployment:
 if __name__ == '__main__':
 
     num_required_posts = 1000
-    search_phrase = "Spotify"
+    search_phrase = "League of Legends"
 
     input_fp = os.path.dirname(__file__) + "/Data/data.json"
     output_fp = os.path.dirname(__file__) + "/ray_output.txt"
@@ -53,9 +53,12 @@ if __name__ == '__main__':
             "http://localhost:8000/", params={"text": parser.large_string}
             ).json()
 
-    with open(output_fp, 'w', encoding='utf-8') as output_file:
-        for item in return_val:
-            output_file.write(str(item) + '\n')
+    # with open(output_fp, 'w', encoding='utf-8') as output_file:
+    #     for item in return_val:
+    #         output_file.write(str(item) + '\n')
+
+    for item in return_val:
+        print(item)
         
     print(f"Run finished! Check {output_fp.split('/')[-1]} for the output!\n")
     # {'label': 'POSITIVE', 'score': 0.9998476505279541}
